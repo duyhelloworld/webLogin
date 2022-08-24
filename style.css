@@ -1,0 +1,87 @@
+#box-btn{
+    position: relative;
+    top: 15px;
+    display: grid;
+    place-items: center;
+}
+#reloadBtn{
+    border: 2px solid rgba(100, 100, 100, 0.7);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px 10px;
+    text-shadow: 1px 1px 0 gray;
+    box-shadow: 2px 2px 0 #888;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-size: 18px; */
+}
+#reloadBtn:hover{
+    background-color: #ccc;
+}
+
+#reloadBtn:active{
+    background-color: #333;
+    color: #0f0;
+    box-shadow: 0 5px #888;
+}
+
+.container{
+    background-attachment: fixed;
+    background-color: #888;
+    border: 1px solid gray;
+    box-shadow: -10px 10px 50px;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 14px;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 75px;
+}
+
+input[type=submit]:active{
+    cursor: wait;
+    background-color: #aaa;
+    color: #000;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #000;
+    cursor: text;
+    caret-color: #bbb;
+}
+
+.container #listQues #uni{
+    background-color: #fff;
+    color: #000;
+}
