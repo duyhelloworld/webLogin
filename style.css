@@ -1,20 +1,26 @@
-#box-btn{
+html, body{
+    padding: 0;
+    --reloadBtn-top: 20px;
+    --reload-bg-color: rgba(100, 100, 100, 0.7);
+    --reload-shadow: 2px 2px 0 #888;
+    --container-bg-color:#888;
+}
+
+.boxBtn{
     position: relative;
-    top: 15px;
+    top: var(--reloadBtn-top);
     display: grid;
     place-items: center;
 }
+
 #reloadBtn{
-    border: 2px solid rgba(100, 100, 100, 0.7);
+    border: 2px solid var(--reload-bg-color);
     box-sizing: border-box;
     border-radius: 5px;
-    width: 50%;
     padding: 10px 10px;
-    text-shadow: 1px 1px 0 gray;
-    box-shadow: 2px 2px 0 #888;
+    box-shadow: var(--reload-shadow);
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
-    /* font-size: 18px; */
 }
 #reloadBtn:hover{
     background-color: #ccc;
@@ -23,45 +29,43 @@
 #reloadBtn:active{
     background-color: #333;
     color: #0f0;
-    box-shadow: 0 5px #888;
+    box-shadow: 0 5px var(--container-bg-color);
 }
 
 .container{
     background-attachment: fixed;
-    background-color: #888;
-    border: 1px solid gray;
+    background-color: var(--container-bg-color);
+    border: 1px solid var(--container-bg-color);
     box-shadow: -10px 10px 50px;
     border-radius: 20px;
-    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 55px;
-    margin-left: 14px;
+    margin: 10%;
 }
 
-input[type=submit] {
+#submitBtn{
     width: 50%;
     background-color: #4CAF50;
     color: #fff;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 0 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 75px;
+    margin-left: 25%;
 }
 
-input[type=submit]:active{
+#submitBtn:active{
     cursor: wait;
     background-color: #aaa;
     color: #000;
 }
 
-input[type=text], select {
+
+.inputField{
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -81,7 +85,9 @@ input[type=password], select {
     caret-color: #bbb;
 }
 
-.container #listQues #uni{
+#listUni{
     background-color: #fff;
     color: #000;
+    font-size: 14px;
+    margin-top: -3px;
 }

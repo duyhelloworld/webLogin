@@ -5,36 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>:))</title>
+    <link rel="shortcut icon" href="./facebook.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="box-btn">
+    <div class="boxBtn">
         <input type="button" id="reloadBtn" value="Error? click me">
     </div>
 
     <div class="container">
 
-        <div id="listQues">
-            <p>Usẻname :</p>
-            <input type="text" placeholder="Chửa học database nên ghi bừa đi">
-            <p>Email: </p>
-            <input type="text" placeholder="Như câu trên">
-            <p>Học ở :</p>
-            <select name="Uni" id="uni">
-                <option value="HUCE">HUCE - DHXD</option>
-                <option value="PTIT">PTIT - BCVT</option>
-                <option value="NEU">NEU - KTQD</option>
-                <option value="HANU">HANU - DHHN</option>
-                <option value="...">Others</option>
-            </select>
+        <div id="listField">
+            <p>Email :</p>
+            <input class="inputField" type="email" placeholder="Nhập email ..." id="email">
+            <p>Username : </p>
+            <input class="inputField" type="text" placeholder="Nhập tên username ..." id="username">
+            <p>University : </p>
+            <form>
+                <select id="listUni">
+                    <option value="HUCE" selected>HUCE - DHXD</option>
+                    <option value="PTIT">PTIT - BCVT</option>
+                    <option value="NEU">NEU - KTQD</option>
+                    <option value="HANU">HANU - DHHN</option>
+                    <option value="...">Others</option>
+                </select>
+            </form>
+                <p>Your university :</p>
+                <input type="text" id="otherUni" class="inputField" placeholder="Nhập tên trường đại học ..." disabled>
             <p>Tài khoản :</p>
-            <input type="text" placeholder="Dùng kí tự khó vào nhé">
+            <input class="inputField" type="text" placeholder="Nhập tài khoản ..." title="Hệ thống tự động tạo ra nếu bỏ trống">
             <p>Password :</p>
-            <input type="password" placeholder="Gõ cẩn thận ko lại bị thó mất">
-            <p><input type="checkbox" name="license" id="ticker">Bạn có chấp nhận điều khoản của chúng tôi ko?</p>
+            <input  class="inputField" type="password" placeholder="Gõ cẩn thận ko lại bị thó mất">
+            <p><input type="checkbox" name="license" id="tickbox">Bạn có chấp nhận điều khoản của chúng tôi ko?</p>
             <input type="submit" id="submitBtn">
         </div>
-
     </div>
 
 </body>
